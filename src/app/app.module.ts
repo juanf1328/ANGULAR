@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
-
+// import { HttpClientModule } from '.angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     LayoutModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
  
   providers: [],

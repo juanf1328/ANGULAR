@@ -1,24 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { PersonajesComponent } from './personajes/personajes.component';
-import { LugaresComponent } from './lugares/lugares.component';
-import { SociedadesComponent } from './sociedades/sociedades.component';
+import { SearchComponent } from './search/search.component';
+import { CharactersComponent } from './characters/characters.component';
 
 
 
 @NgModule({
   declarations: [
-    SidebarComponent,
-    PersonajesComponent,
-    LugaresComponent,
-    SociedadesComponent
+    SearchComponent,
+    CharactersComponent
   ],
   exports:[
-    SidebarComponent,
-    PersonajesComponent,
-    LugaresComponent,
-    SociedadesComponent
+    SearchComponent,
+    CharactersComponent
   ],
   imports: [
     CommonModule

@@ -14,8 +14,9 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 50%;
-    height: 50%;
+    padding-top:7%;
+    width: 100vh;
+    height: 100%;
     cursor: default;
     user-select: none;
     background-image: radial-gradient(
@@ -23,10 +24,10 @@
       #7D55FF,
       transparent
     );
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
     letter-spacing: 3;
     left: 50%;
-    top: 20%;
+    top: 1%;
     font-family: "Clip";
     text-transform: uppercase;
     font-size: 3.5em;
@@ -610,8 +611,8 @@
       }
       
       .hero-container {
-        position: relative;
-        padding: 200px 0;
+        position:relative;
+        /* padding: 100px 100px; */
         text-align: center;
       }
       
@@ -684,12 +685,12 @@
     text-align:left;
         
 }
-a{
+h2{
     color: 	#FBFFFF;
     font-size: 130%;
     height: 200%;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
     text-shadow: 0 0 0.9rem #ffe6ff, 0 0 3.5rem #FF4B2B,
     -0.2rem 0.1rem 1rem #ff9966, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff5e62;
@@ -700,4 +701,43 @@ p{
     font-size: 130%;
     height: 200%;
     text-decoration: none;
+}
+.comp{
+  position:static;
+  top: 20px;
+  /* width: 500vh; */
+}
+.card{
+  box-sizing: border-box;
+  border-style: none;
+  /* float: left; */
+  width: 25%;
+  padding: 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(to top, #fb00ff2a, #00dade5b);
+  /* width: 100%; */
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.6px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  transition: all .2s ease-in-out; 
+}
+.card:hover{
+  background: linear-gradient(to top,#00dade9d , #fb00ff98);
+  text-shadow: 0 0 0.9rem #ffe6ff, 0 0 3.5rem #f5674e,
+    -0.2rem 0.1rem 1rem #faa981, 0.2rem 0.1rem 1rem #fc54b3,
+    0 -0.5rem 2rem #fa197b, 0 0.5rem 3rem #fd7073;
+  animation: shine 1s forwards, flicker 0.1s infinite;
+  perspective: 10px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  /* transform: rotateY(360deg); */
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.527);
+  /* transform: scale(1.1); */
 }
