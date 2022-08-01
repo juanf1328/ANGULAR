@@ -652,7 +652,7 @@
           opacity: 0;
           transform: translateX(-50%);
           text-shadow: -2px 3px 0 #C45AEC, 2px -3px 0 #9D00FF;
-        };
+        }
         60% {
           opacity: 0.5;
           transform: translateX(50%);
